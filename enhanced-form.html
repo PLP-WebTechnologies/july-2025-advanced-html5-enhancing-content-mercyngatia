@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Mercy Ngatia, Web developer, HTML5, SEO">
+        <meta name="description" content="Demonstration of advanced HTML5 elements including lists, tables, media, and form validation.">
+        <title>Enhanced HTML5 Page with Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Enhanced HTML page with Form</h1>
+            <P>Sematic HTML elements including lists, tables, media and forms</P>
+        </header>
+
+        <main class="container">
+        <section id="content-showcase">
+            <h2>Shopping Hub</h2>
+            
+            <section>
+                <h3>Fruits To Shop</h3>
+                <ol>
+                    <li>Banans</li>
+                    <li>Apples</li>
+                    <li>Oranges</li>
+                    <li>Mangoes</li>
+                    <li>Pineapple</li>
+                </ol>
+            </section>
+            
+            <section>
+                <h3>Order placed online</h3>
+                <ul>
+                    <li>Headphones</li>
+                    <li>Smart watch</li>
+                    <li>T-shirt</li>
+                    <li>Sneakers</li>
+                    <li>Handbag</li>
+                </ul>
+            </section>
+
+            <article>
+                <h3>Product Table</h3>
+                <table border="2">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Availability</th>
+                            <th>Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Headphones</td>
+                        <td>$15.99</td>
+                        <td>In Stock</td>
+                        <td>★★★★☆</td>
+                        </tr>
+                        <tr>
+                        <td>Smart watch</td>
+                        <td>$77.99</td>
+                        <td>In Stock</td>
+                        <td>★★★★☆</td>
+                        </tr>
+                        <tr>
+                        <td>Sneakers</td>
+                        <td>$145.99</td>
+                        <td>In Stock</td>
+                        <td>★★★★★</td>
+                        </tr>
+                        <tr>
+                        <td>Headphones</td>
+                        <td>$225.99</td>
+                        <td>In Stock</td>
+                        <td>★★★★☆</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <section id="media-player">
+            <div class="media-conatiner">
+                <div class="media-item">
+                    <h3>Watch and Listen our advert</h3>
+                    <figure>
+                        <img src="travel-bag.jpg" alt="Colorful bags with sale tags" width="500" height="350"/>
+                        <figcaption>Catch the hottest deals this season!</figcaption>
+                    </figure>
+                </div>
+
+                <div class="media-item">
+                    <h3>Audio</h3>
+                    <audio controls>
+                        <source src="music-store.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Listen to our cathy store jingle!.</p>
+                </div>
+                <div class="media-item">
+                    <h3>Video</h3>
+                    <video width="500" height="350" controls>
+                        <source src="small-promo.mp4" type="video/mp4">
+                        <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+                        Your browser does not support the audio element.                  
+                    </video>
+                    <p>Watch our latest product highlights!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="form-fill">
+            <h2>Fill the Form to Order Our Products</h2>
+            <p></p>
+            <form id="contact-form" novalidate>
+                <fieldset>
+                    <legend><b>Personal Information</b></legend>
+                    <div class="form-group">
+                        <label for="name">Full Name*</label>
+                        <input type="text" id="name" name="name" required minlength="3" placeholder="Enter you full name" autocomplete="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Email Address*</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com" autocomplete="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" autocomplete="tel">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" max="2005-12-31">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend><b>Preferences</b></legend>
+                    <div class="form-group">
+                        <label>Favotite Color</label>
+                        <input type="color" id="color" name="color" value="#a78e6f">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interest">Primary Interest*</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">Select an option</option>
+                            <option value="shoes">Shoes</option>
+                            <option value="men">Men Wear</option>
+                            <option value="ladies">Ladies Wear</option>
+                            <option value="children">Children</option>
+                            <option value="pet">Pets</option>
+                        </select>
+                    </div><br>
+
+                    <div class="form-group">
+                        <label>How often Do You Shop?</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="weekly" name="frequency" value="weekly" checked>
+                        <label for="weekly" class="inline-label">Weekly</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="weekly" name="frequency" value="weekly" checked>
+                        <label for="weekly" class="inline-label">Monthly</label>
+                    </div> 
+                    <div>
+                        <input type="radio" id="weekly" name="frequency" value="weekly" checked>
+                        <label for="weekly" class="inline-label">Never</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Items (Seect all that apply)</label>
+                        <div>
+                            <input type="checkbox" id="fashion" name="items" value="fashion" checked>
+                            <label for="fashion" class="inline-label">Fashion</label>
+                        </div>
+                    <div>
+                            <input type="checkbox" id="fitness" name="items" value="fitness" checked>
+                            <label for="fitness" class="inline-label">Fitness</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="beauty" name="items" value="beauty" checked>
+                            <label for="beauty" class="inline-label">Beauty</label>
+                        </div>
+                        </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend><b>Customers Details and Feedback</b></legend>
+                    <div class="form-group">
+                        <label for="website">Website URL</label>
+                        <input type="url" id="website" name="website" placeholder="https://example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="delivery">Prefered Delivery Location</label>
+                        <input type="text" id="delivery" name="delivery" placeholder="e.g Nairobi CBD" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rating">Rate Your Experience (1-10)</label>
+                        <input type="number" id="rating" name="rating" min="1" max="10" step="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Additional Comments</label>
+                        <input id="comments" name="comments" rows="5" placeholder="Enter your message here....">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="payment">Upload Proof of Payment (PDF only)</label>
+                        <input type="file" id="payment" name="payment" accept=".pdf" required>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <div class="form-group">
+                        <input type="checkbox" name="consent" id="consent" required>
+                        <label for="consent" class="inine-label">I agree to the terms and conditions*
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" id="timestamp" name="timestamp" value="read only">
+                        <button>Submit Payment</button>
+                        <button>Reset Payment</button>
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+        <footer>
+            <p>© 2025 Mercy Ngatia. All rights reserved<a href="https://www.w3.org/WAI/" target="_blank"></a></p>
+        </footer>
+            
+
+
+    </body>
+</html>
