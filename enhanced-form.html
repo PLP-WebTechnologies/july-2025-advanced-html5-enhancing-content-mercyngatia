@@ -2,24 +2,27 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/style.css"> <!-- Link to your CSS file here -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Mercy Ngatia, Web developer, HTML5, SEO">
         <meta name="description" content="Demonstration of advanced HTML5 elements including lists, tables, media, and form validation.">
         <title>Enhanced HTML5 Page with Form</title>
     </head>
     <body>
-        <header>
+        <div class="page-container">
+        <header class="page-header">
             <h1>Enhanced HTML page with Form</h1>
-            <P>Sematic HTML elements including lists, tables, media and forms</P>
+            <p>Sematic HTML elements including lists, tables, media and forms</p>
         </header>
 
         <main class="container">
-        <section id="content-showcase">
+            <section id="content-showcase">
             <h2>Shopping Hub</h2>
-            
-            <section>
+
+            <div class="page-grid">
+            <section class="fruits">
                 <h3>Fruits To Shop</h3>
-                <ol>
+                <ol class="fruit-list">
                     <li>Banans</li>
                     <li>Apples</li>
                     <li>Oranges</li>
@@ -28,9 +31,9 @@
                 </ol>
             </section>
             
-            <section>
+            <section class="fruits">
                 <h3>Order placed online</h3>
-                <ul>
+                <ul class="fruit-list">
                     <li>Headphones</li>
                     <li>Smart watch</li>
                     <li>T-shirt</li>
@@ -39,7 +42,7 @@
                 </ul>
             </section>
 
-            <article>
+        <article class="table-container">
                 <h3>Product Table</h3>
                 <table border="2">
                     <thead>
@@ -77,8 +80,11 @@
                         </tr>
                     </tbody>
                 </table>
-            </article>
-        </section>
+        </article>
+        </div>
+       </section>
+    </main>
+</div>
 
         <section id="media-player">
             <div class="media-conatiner">
@@ -236,10 +242,13 @@
             </form>
 
         </section>
-        <footer>
-            <p>© 2025 Mercy Ngatia. All rights reserved<a href="https://www.w3.org/WAI/" target="_blank"></a></p>
+        
+        <footer class="footer">
+            <div class="footer-content"><p>© 2025 Mercy Ngatia. 
+                All rights reserved<a href="https://www.w3.org/WAI/" target="_blank"></a></p></div>
         </footer>
-            
+        
+
 
 
     </body>
